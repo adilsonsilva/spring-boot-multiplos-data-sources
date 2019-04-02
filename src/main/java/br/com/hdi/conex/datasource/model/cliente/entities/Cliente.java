@@ -1,4 +1,4 @@
-package br.com.hdi.conex.datasource.model.vistoria.entities;
+package br.com.hdi.conex.datasource.model.cliente.entities;
 
 import java.io.Serializable;
 

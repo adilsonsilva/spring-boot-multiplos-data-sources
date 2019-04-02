@@ -17,10 +17,10 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.PlatformTransactionManager;
 
 @Configuration
-@EnableJpaRepositories(basePackages = { "br.com.hdi.conex.datasource.model.vistoria.repository" },
+@EnableJpaRepositories(basePackages = { "br.com.hdi.conex.datasource.model.cliente.repository" },
 	entityManagerFactoryRef = "db1EntityManager",
 	transactionManagerRef = "db1TransactionManager")
-public class VistoriaConfig {
+public class ClienteConfig {
 
     @Autowired
     private Environment env;
@@ -30,7 +30,7 @@ public class VistoriaConfig {
     public LocalContainerEntityManagerFactoryBean db1EntityManager() {
         LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
         em.setDataSource(db1Datasource());
-        em.setPackagesToScan(new String[]{"br.com.hdi.conex.datasource.model.vistoria.entities"});
+        em.setPackagesToScan(new String[]{"br.com.hdi.conex.datasource.model.cliente.entities"});
         em.setPersistenceUnitName("db1EntityManager");
         HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
         em.setJpaVendorAdapter(vendorAdapter);

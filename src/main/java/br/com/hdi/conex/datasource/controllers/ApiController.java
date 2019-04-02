@@ -8,9 +8,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import br.com.hdi.conex.datasource.model.cliente.entities.Cliente;
+import br.com.hdi.conex.datasource.model.cliente.repository.ClienteRepository;
 import br.com.hdi.conex.datasource.model.user.respository.UserRepository;
-import br.com.hdi.conex.datasource.model.vistoria.entities.Cliente;
-import br.com.hdi.conex.datasource.model.vistoria.repository.ClienteRepository;
 
 @RestController
 public class ApiController {

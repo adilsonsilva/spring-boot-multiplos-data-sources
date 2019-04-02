@@ -12,12 +12,12 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
 
 import br.com.hdi.conex.datasource.config.UserConfig;
-import br.com.hdi.conex.datasource.config.VistoriaConfig;
+import br.com.hdi.conex.datasource.config.ClienteConfig;
+import br.com.hdi.conex.datasource.model.cliente.repository.ClienteRepository;
 import br.com.hdi.conex.datasource.model.user.respository.UserRepository;
-import br.com.hdi.conex.datasource.model.vistoria.repository.ClienteRepository;
 
 @RunWith(SpringRunner.class)
-@ContextConfiguration(classes = { UserConfig.class, VistoriaConfig.class })
+@ContextConfiguration(classes = { UserConfig.class, ClienteConfig.class })
 @DirtiesContext(classMode = ClassMode.AFTER_CLASS)
 public class DatasourceApplicationTests {
 
